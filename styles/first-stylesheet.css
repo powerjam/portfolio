@@ -1,7 +1,131 @@
 /* Jamie Do's week 3, assignment 3 style sheet */
 /* Requirement:  50+ lines of code */
 
+
+/* Font - global */
+
 body {
   font-family: "Segoe UI", sans-serif;
-  font-size: 10pt;
+  font-size: .85em;
+}
+
+p, a {
+  font-size: 1em;
+}
+
+
+/* Headers - global */
+
+h1 {
+  font-family: "Segoe UI Light", sans-serif;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 100;
+  color: #33bbbb;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+
+/* Hyperlinks - global */
+
+a:link {
+  color: #33bbbb;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #33bbbb;
+  text-decoration: none;
+}
+
+a:active {
+  color: #88dddd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Reusable Styling */
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+
+/* Special Styling */
+
+nav a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+.divider {
+  padding-top: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.thumbnail img {
+  /* Resize img tags in "thumbnail" class */
+  width: 10%;
+  height: 10%;
+  background: rgba(255, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.thumbnail img:hover{
+  /*background-color: #0000ff;*/
+  opacity: .5;
+  filter: alpha(opacity=50); /* For IE8 and? earlier */
+}
+
+
+/* CSS3 For Funsies */
+
+#animated-div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
 }
