@@ -98,8 +98,15 @@ nav a:hover {
   filter: alpha(opacity=50); /* For IE8 and? earlier */
 }
 
+#portrait {
+  width: 15%;
+  height: 15%;
+  float: right;
+  margin: 0px 0px 15px 15px;
+}
 
-/* CSS3 For Funsies */
+
+/* Special CSS3 For Funsies */
 
 #animated-div {
     width: 100px;
