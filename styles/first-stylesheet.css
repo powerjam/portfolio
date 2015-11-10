@@ -1,38 +1,37 @@
-/* Jamie Do's week 3, assignment 3 style sheet */
-/* Requirement:  50+ lines of code */
+/* Main Stylesheet */
+/* by Jamie Powers Do */
+/* November 2015 */
 
+/* GLOBAL */
 
-/* Font - global */
+* { box-sizing: border-box; }
 
-body {
-  font-family: "Segoe UI", sans-serif;
-  font-size: .85em;
+/* FONT */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-size: 1rem;
 }
 
 p, a {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
-
-/* Headers - global */
+/* HEADERS */
 
 h1 {
-  font-family: "Segoe UI Light", sans-serif;
-  font-weight: 100;
-}
-
-h2 {
   font-size: 2em;
   font-weight: 100;
-  color: #33bbbb;
+  color: #000000;
+  /*font-family: 'Open Sans Light', 'Segoe UI Light', sans-serif;*/
 }
 
 h3 {
   font-weight: 100;
 }
 
-
-/* Hyperlinks - global */
+/* HYPERLINKS */
 
 a:link {
   color: #33bbbb;
@@ -54,7 +53,45 @@ a:hover {
 }
 
 
-/* Reusable Styling */
+/* NAVIGATION */
+
+.menu ul {
+  text-align: right;
+  background-color: #ddf9f9;
+  padding-bottom: .15rem;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  display: inline-block;
+  padding: .25rem 1rem;
+}
+
+/* CONTENT */
+
+article {
+  padding: .5rem 2rem;
+}
+
+/* Headers - global */
+/*h1 {
+  font-family: 'Open Sans Light', 'Segoe UI Light', sans-serif;
+  font-weight: 100;
+}*/
+
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid #cccccc;
+  padding: 0rem 2rem .3rem 2rem;
+}
+
+
+/* REUSABLE */
 
 .lowercase {
   text-transform: lowercase;
@@ -69,7 +106,7 @@ a:hover {
 }
 
 
-/* Special Styling */
+/* SPECIAL STYLING (local) */
 
 nav a:link, a:visited, a:active {
   text-decoration: none;
@@ -103,36 +140,4 @@ nav a:hover {
   height: 15%;
   float: right;
   margin: 0px 0px 15px 15px;
-}
-
-
-/* Special CSS3 For Funsies */
-
-#animated-div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-    animation-name: example;
-    animation-duration: 4s;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
-
-/* Standard syntax */
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
 }
