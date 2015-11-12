@@ -2,11 +2,17 @@
 /* by Jamie Powers Do */
 /* November 2015 */
 
+
 /* GLOBAL */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+  margin-top: 0px;
+}
 
-/* FONT */
+
+/* GLOBAL & FONT STYLING */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -18,6 +24,10 @@ p, a {
   font-size: 1rem;
 }
 
+.icon {
+  font-size: 2rem;
+}
+
 /* HEADERS */
 
 h1 {
@@ -25,6 +35,10 @@ h1 {
   font-weight: 100;
   color: #000000;
   /*font-family: 'Open Sans Light', 'Segoe UI Light', sans-serif;*/
+}
+
+h2 {
+  font-weight: 100;
 }
 
 h3 {
@@ -53,12 +67,19 @@ a:hover {
 }
 
 
+/* WEBSITE HEADER */
+
+header {
+  padding: 0rem;
+}
+
+
 /* NAVIGATION */
 
 .menu ul {
   text-align: right;
   background-color: #ddf9f9;
-  padding-bottom: .15rem;
+  padding: .5rem 0rem .75rem 0rem;
 }
 
 .menu li {
@@ -72,22 +93,16 @@ a:hover {
 
 /* CONTENT */
 
-article {
-  padding: .5rem 2rem;
+article, aside {
+  padding: .5rem 2rem .5rem 2rem;
 }
-
-/* Headers - global */
-/*h1 {
-  font-family: 'Open Sans Light', 'Segoe UI Light', sans-serif;
-  font-weight: 100;
-}*/
 
 
 /* FOOTER */
 
 footer {
   border-top: 1px solid #cccccc;
-  padding: 0rem 2rem .3rem 2rem;
+  padding: 1rem 2rem .3rem 2rem;
 }
 
 
@@ -117,7 +132,7 @@ nav a:hover {
 }
 
 .divider {
-  padding-top: 20px;
+  margin: 20px;
   border-bottom: 1px solid #cccccc;
 }
 
@@ -141,3 +156,10 @@ nav a:hover {
   float: right;
   margin: 0px 0px 15px 15px;
 }
+
+
+
+
+
+
+/* OFF CANVAS MENU */
