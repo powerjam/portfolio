@@ -14,26 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Jamie's CSS -->
   <!--<link rel="stylesheet" type="text/css" href="styles/first-stylesheet.css">-->
   <!-- JQuery via Google -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   
   
-  <!-- STYLE FOR TESTING, TO BE DELETED!!! -->
+  <!-- STYLE FOR BOOTSTRAP GRID TESTING
   <style>
     .col-xs-12 {
-      height: 50px;
       background-color: aquamarine;
       color: black;
       text-align: center;
     }
     .col-xs-6 {
-      height: 50px;
       background-color: skyblue;
       color: black;
       text-align: center;
     }
   </style>
+  -->
   
 </head>
 
@@ -55,63 +55,98 @@
   </header>
   
   
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">col-xs-12</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-6">col-xs-6</div>
-      <div class="col-xs-6">col-xs-6</div>
-    </div>
-  </div>
-  
-  
-
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
-    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-  </div>
-  <div class="row">
-    <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-    <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-    <!-- Optional: clear the XS cols if their content doesn't match in height -->
-    <div class="clearfix visible-xs-block"></div>
-    <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-  </div>
-
-  
-  
-  
   <article>
-    <!-- Content -->
-    <h1>Hula and Tahitian</h1>
-    
-    <!--<img src="images/jamie-do.png" alt="Jamie Do" id="portrait">-->
-    
-    <!-- ADD INFO ABOUT DANCING -->
-    <p>I learned web developing at a young age.  At age 10, I was creating websites with Frontpage (which doesn't even exist now apparently).  By the time I was 12, I was teaching myself -- with some guidance from my big brother -- to write HTML and CSS by hand in a very basic text editor (Notepad). I believe learning HTML and CSS, alongside Adobe Photoshop, as a hobby has instilledin me the skills of not only how to code, but also problem solving.</p>
+    <div class="container-fluid">
+      <br><br>
 
-    <p>My work experience has included a variety of areas, and it's reflective of my schooling and interests.  I've found myself to be both left and right-brained, i.e., logical and creative. So while I love a good process flow diagram and gaining an understanding of the big picture or how something works, I also have a huge curiosity of people and art. By people, I mean things like sociology and psychology.  Thus I think the career path that I'm on as a User Experience Designer is a great fit, since I can solve problems that users have, all-the-while being empathetic to their issues.</p>
-    
-    <p>What I focused learning during my undergrad includes Business, Information Systems, Human Resource Management, and a Diversity Minor.  Clearly that's a good jumble of courses.  But all of the above fascinated me, and if anything, I wish I had taken more sociology and psychology classes.</p>
-    
-    <p>In my career after college, I've held roles either formally or informally as an IT Auditor, Risk &amp; Compliance Consultant, Project Coordinator, Project Manager, Systems/Functional Analyst, and a Prodct Owner. Today, I'm a User Experience Designer, learning as I go, and I love every bit of it.</p>
+      <div class="jumbotron">
+        <h1>Welcome to Jamie's site!</h1>
+        <p>You've reached Jamie's site; while this particular page focuses on a specific topic, you can learn more about the website creator elsewhere in this site.</p>
+        <p><a class="btn btn-info btn-lg" href="about.html" role="button">Learn about Jamie</a></p>
+    </div>
+      
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-header">
+            <h1><a name="top"></a>Hula and Tahitian</h1>
+            <small>I've been dancing on and off since I was six years old; Polynesian dancing has become a major part of my life.<br>
+              Jump to <a href="#hula">hula</a> or <a href="#tahitian">Tahitian</a> to learn more about a particular type of dance.</small>
+          </div>
+        </div>
+      </div>
 
-  </article>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-8">
+          <!-- About Hula -->
+          <h2><a name="hula"></a>Hula</h2>  
+          <h3>What is hula?</h3>
+          <p class="text-justify">Hula is a dance accompanied by chant (<i>oli</i>) or song (<i>mele</i>).  It originated in Hawai'i.</p>
+          <p class="text-justify">Any form of hula dance uses the entire body - facial expressions, arms, hands, legs, hips, etc. The whole body helps to tell stories and legends. There can also be instruments; the type instruments depends on the category of hula.</p>
+          <h3>Hula Categories</h3>
+          <p class="text-justify">There are two main categories or forms of hula: <i>kahiko</i> (tradidional) and <i>'auana</i> (modern).</p>
+          <p class="text-justify">Kahiko was danced before any European/Western colonization or influence.  It is accompanied by oli and traditional instrucments.</p>
+          <p class="text-justify">'Auana is considered the modern form of hula, as it is accompanied by mele and Western-influenced musical instruments such as an 'ukulele and guitar.</p>
+          <h3>What is a hālau hula?</h3>
+          <p class="text-justify">A hālau hula is where hula is taught.  A  hālau is led and taught by a teacher (<i>kumu</i>) to the students (<i>haumana</i>). Experienced and knowledgeable hula haumana can tell which  hālau dancers come from based on the style and their overal presentation during a performance.</p>
+        </div>
+        <div class="col-xs-6 col-md-4">
+          <img src="images/klaeollok-hula.jpg" class="img-rounded img-responsive" alt="Hula - Ke Liko A'e O Lei Lehua O Kapuaokalani">
+          <p class="small">Ke Liko A'e O Lei Lehua O Kapuaokalani after Folklife Festival 2015</p>
+        </div>  
+      </div>
 
+      <div class="row">
+        <div class="col-xs-12"><a href="#top" class="btn btn-primary" role="button">Back to top</a>
+        </div>
+      </div>
 
-  <aside>
-    <!-- Aside with supplementary content -->
-    <p></p>
-  </aside>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-8">
+          <!-- About Tahitian -->
+          <h2><a name="tahitian"></a>Tahitian</h2>  
+          <h3>What is Tahitian dance?</h3>
+          <p class="text-justify">Tahitian dance originated in Tahiti as an art movement of a civilization that depended solely on oral tradition. In ancient times, dances were directly linked with all aspects of life; dancers would dance for joy, to worship or pray to a god, to challenge an enemy, to seduce a mate, to greet guests at a ceremony, etc.</p>
+          <p>There are a variety of instrucments used in Tahitian dance, as well as many adornments for the dancers.  The most notable of instruments are the drums - made of hollowed-out tree limbs and shark skin.  Also, a <i>pu</i> (conch) is often used.</p>
+          <h3>Tahitian Dance Types</h3>
+          <p class="text-justify">There are a few types of Tahitian dance, including <i>'ote'a</i> (traditional choreographed Tahitian dance), <i>'aparima</i>, and <i>'ahuroa</i></p>
+          <p class="text-justify">The 'ote'a features coordinated movements, where dancers are arranged in columns and rows, accompanied by the drummers. Oftentimes elaborate costumes are worn, with flashy headpieces and big skirts.</p>
+          <p class="text-justify">'Aparima tells a story.  It is a slower dance that emphasizes hand movements to tell such stories.</p>
+          <p class="text-justify">'Ahuroa is a slower version of an 'aparima. This type also tells a story through hand movements.</p>
+          <p class="text-justify">An 'ori is a solo dance.  The dancer may or may not know the drumming, but the goal is to be able to listen to and easily transition between drum beats.</p>
+        </div>
+        <div class="col-xs-6 col-md-4">
+          <img src="images/klaeollok-tahitian.jpg" class="img-rounded img-responsive" alt="Tahitian - Ke Liko A'e O Lei Lehua O Kapuaokalani">
+          <p class="small">'Ote'a performance at Aha Mele 2015 by Ke Liko A'e O Lei Lehua O Kapuaokalani</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-xs-12"><a href="#top" class="btn btn-primary" role="button">Back to top</a>
+        </div>
+      </div>
+    </div>
+
+    </article>
   
+  <br><br>
   
-  <footer>
-    <!-- Footer -->
-    <p>&copy; 2015 Jamie Powers Do</p>
-  </footer>
+    <aside>
 
+      <div class="container-fluid">
+        <!-- Pictures [PLACEHOLDER] -->
+        <div class="row">
+          <div class="col-xs-6 col-sm-4"><img src="http://kurtyphotography.com/uploaded_images/hula1-795043.jpg" alt="Traditional hula dancer" class="img-rounded img-responsive"></div>
+          <div class="col-xs-6 col-sm-4"><img src="http://images6.fanpop.com/image/photos/34200000/lilo-e-stitch-adventure-time-with-finn-and-jake-34281033-700-412.jpg" alt="Lilo and Stitch (first movie)" class="img-rounded img-responsive"></div>
+          <!-- Optional: clear the XS cols if their content doesn't match in height -->
+          <div class="clearfix visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4"><img src="http://cloud.honolulupulse.com/wp-content/uploads/2012/07/20120713_tgf_doit01.jpg" alt="Tahitian" class="img-rounded img-responsive"></div>
+        </div>
+      </div>
+ 
+    </aside>
+
+  <br><br>
+  
 </body>
 
 </html>
